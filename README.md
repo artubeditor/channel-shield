@@ -11,6 +11,7 @@
 - `analytics.js`: Google Analytics 4 태그 로더
 - `robots.txt`: 검색엔진 수집 허용 및 사이트맵 위치
 - `sitemap.xml`: 검색엔진 제출용 사이트맵
+- `c57c5f42392eb7cd5814beca3b71cc6b.txt`: IndexNow URL 제출용 소유권 키 파일
 - `assets/channel-proof-*.png`: 첫 화면에 사용하는 유튜브 검증 화면 슬라이드 이미지
 - `_headers`: Cloudflare Pages 보안 및 캐시 헤더
 - `wrangler.toml`: Cloudflare Pages 직접 배포 설정
@@ -22,6 +23,12 @@
 ```js
 const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
 ```
+
+## 검색엔진 등록
+
+- `robots.txt`에서 `sitemap.xml`을 안내합니다.
+- Google Search Console과 네이버 서치어드바이저는 사이트 소유자 계정에서 소유권 인증 후 `https://channel-shield.pages.dev/sitemap.xml`을 제출합니다.
+- IndexNow는 루트 키 파일을 통해 URL 업데이트를 제출합니다.
 
 ## 로컬 미리보기
 
