@@ -1090,10 +1090,39 @@ button {
   margin: 0;
 }
 
+.sale-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+}
+
 .price span {
   display: block;
   font-size: 44px;
   line-height: 1;
+  font-weight: 860;
+}
+
+.price .old-price {
+  color: rgba(47, 65, 91, 0.44);
+  font-size: 24px;
+  font-weight: 780;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(47, 65, 91, 0.46);
+}
+
+.price small {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 5px 10px;
+  border: 1px solid rgba(103, 172, 255, 0.26);
+  border-radius: var(--radius-pill);
+  color: #1f76df;
+  background: rgba(229, 244, 255, 0.58);
+  font-size: 13px;
   font-weight: 860;
 }
 
