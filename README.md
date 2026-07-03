@@ -8,7 +8,7 @@
 - `index.html`: 페이지 구조, 구매 상담 모달, SEO 메타데이터
 - `styles.css`: Apple 스타일의 블루 리퀴드 글래스 디자인
 - `app.js`: 모바일 메뉴, 구매 옵션 선택, 리스크 패널, 모달 동작
-- `assets/glass-hero.png`: 첫 화면에 사용하는 배경 이미지
+- `assets/channel-proof-*.png`: 첫 화면에 사용하는 유튜브 검증 화면 슬라이드 이미지
 - `_headers`: Cloudflare Pages 보안 및 캐시 헤더
 - `wrangler.toml`: Cloudflare Pages 직접 배포 설정
 
