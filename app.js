@@ -64,6 +64,10 @@ function closeModal(modal) {
   lastFocusedElement?.focus?.();
 }
 
+function trackEvent(name, params = {}) {
+  window.gtag?.("event", name, params);
+}
+
 window.addEventListener("scroll", syncHeader, { passive: true });
 syncHeader();
 
@@ -86,6 +90,24 @@ journeyTabs.forEach((tab) => {
 
 document.querySelectorAll("[data-modal-open]").forEach((button) => {
   button.addEventListener("click", () => openModal(button.dataset.modalOpen));
+});
+
+document.querySelectorAll('a[href*="open.kakao.com"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent("purchase_cta_click", {
+      link_text: link.textContent.trim(),
+      destination: "kakao_open_chat"
+    });
+  });
+});
+
+document.querySelectorAll('a[href*="latpeed.com"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent("ebook_cta_click", {
+      link_text: link.textContent.trim(),
+      destination: "latpeed"
+    });
+  });
 });
 
 document.querySelectorAll("[data-modal-close]").forEach((control) => {

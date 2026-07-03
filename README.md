@@ -5,12 +5,23 @@
 
 ## 구성
 
-- `index.html`: 페이지 구조, 구매 상담 모달, SEO 메타데이터
+- `index.html`: 페이지 구조, SEO 메타데이터, 구조화 데이터
 - `styles.css`: Apple 스타일의 블루 리퀴드 글래스 디자인
-- `app.js`: 모바일 메뉴, 구매 옵션 선택, 리스크 패널, 모달 동작
+- `app.js`: 모바일 메뉴, 구매 옵션 선택, CTA 클릭 이벤트
+- `analytics.js`: Google Analytics 4 태그 로더
+- `robots.txt`: 검색엔진 수집 허용 및 사이트맵 위치
+- `sitemap.xml`: 검색엔진 제출용 사이트맵
 - `assets/channel-proof-*.png`: 첫 화면에 사용하는 유튜브 검증 화면 슬라이드 이미지
 - `_headers`: Cloudflare Pages 보안 및 캐시 헤더
 - `wrangler.toml`: Cloudflare Pages 직접 배포 설정
+
+## Google Analytics
+
+`analytics.js`의 `GA_MEASUREMENT_ID`에 Google Analytics 4 측정 ID를 넣으면 페이지뷰와 CTA 클릭 이벤트가 전송됩니다.
+
+```js
+const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+```
 
 ## 로컬 미리보기
 
