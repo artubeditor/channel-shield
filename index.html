@@ -32,8 +32,8 @@
 
       <div class="nav-links" id="site-menu" data-menu>
         <a href="#top" class="is-active">홈</a>
-        <a href="#pricing">판매가격</a>
         <a href="#process">구매절차</a>
+        <a href="#pricing">판매가격</a>
         <a href="#faq">FAQ</a>
       </div>
 
@@ -163,9 +163,9 @@
       </div>
 
       <div class="pricing-toggle" role="tablist" aria-label="옵션 선택">
-        <button class="is-active" type="button" data-plan="starter">수익창출 채널</button>
-        <button type="button" data-plan="handoff">10개 이상</button>
-        <button type="button" data-plan="private">전자책</button>
+        <button class="is-active" type="button" data-plan="starter" aria-selected="true">수익창출 채널</button>
+        <button type="button" data-plan="handoff" aria-selected="false">10개 이상</button>
+        <button type="button" data-plan="private" aria-selected="false">전자책</button>
       </div>
 
       <div class="pricing-grid">
@@ -218,7 +218,7 @@
       </div>
 
       <div class="faq-list">
-        <details open>
+        <details>
           <summary>조회수 미달은 무엇을 의미하나요?</summary>
           <p>구매 전에 정한 최소 조회수 기준보다 보장 기간 안의 실제 성과가 낮은 경우를 말합니다.</p>
         </details>
