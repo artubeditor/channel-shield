@@ -817,8 +817,16 @@ button {
 .coverage-large {
   min-height: 390px;
   display: grid;
-  align-content: space-between;
+  grid-template-rows: auto minmax(96px, auto) minmax(118px, 1fr) auto;
+  align-content: stretch;
+  row-gap: 16px;
   padding: 32px;
+}
+
+.coverage-large .micro-label {
+  max-width: none;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .coverage-large h3 {
@@ -828,11 +836,12 @@ button {
   line-height: 1.02;
 }
 
-.coverage-large p {
+.coverage-large > p:not(.micro-label) {
   max-width: 650px;
-  margin: 18px 0;
+  margin: 0;
   color: var(--ink-soft);
   font-size: 18px;
+  line-height: 1.58;
 }
 
 .coverage-large.dark {
