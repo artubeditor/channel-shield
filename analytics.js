@@ -1,4 +1,4 @@
-const GA_MEASUREMENT_ID = "";
+const GA_MEASUREMENT_ID = "G-M2RBNH0EBP";
 
 function isValidGoogleMeasurementId(id) {
   return /^G-[A-Z0-9]+$/i.test(id);
